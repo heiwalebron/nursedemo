@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+    <TextView
+        android:id="@+id/tv1"
+        android:text="11"
+        style="@style/top_bar_text_style_1"
+        />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:text="病人姓名"
+        style="@style/top_bar_text_style_1"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:text="科室"
+        style="@style/top_bar_text_style_1"
+        />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:text="护理等级"
+        style="@style/top_bar_text_style_1"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:text="主治医师"
+        style="@style/top_bar_text_style_1"/>
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/tv6"
+        android:text="主治医师"
+        style="@style/top_bar_text_style_1"/>
+</LinearLayout>

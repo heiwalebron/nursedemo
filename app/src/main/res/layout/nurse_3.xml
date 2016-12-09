@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4b9ab3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="医嘱药品入盒核对清单"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_below="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:text="病历号"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="病床"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/btnConnect"
+            android:text="姓名"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="性别"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="年龄"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="科别"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="药房发药"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="护士室核对"
+            android:id="@+id/hedui"
+            style="@style/top_bar_text_style"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_check"
+        android:layout_below="@+id/top_line"
+        android:layout_above="@+id/Rel_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/Rel_2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="确认"
+            android:textSize="20dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4b9ab3"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:text="张三"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="2016-11-24"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="100dp"
+            android:text="详细医嘱"
+            android:textSize="20dp" />
+        />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_below="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sdfsdfs"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_below="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:text="日期"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="时间"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/btnConnect"
+            android:text="医嘱"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="用法用量"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="医师"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="药房发药"
+            style="@style/top_bar_text_style"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_yizhu"
+        android:layout_below="@+id/top_line"
+        android:layout_above="@+id/fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+    </ListView>
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"/>
+
+
+</RelativeLayout>

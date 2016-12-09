@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4b9ab3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:text="护理室1"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="2016-11-24"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:text="医嘱执行患者名单"
+            android:textSize="20dp" />
+        />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/top_line"
+        android:layout_below="@+id/Rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:text="病历号"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="病床"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/btnConnect"
+            android:text="姓名"
+            style="@style/top_bar_text_style"
+            />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="性别"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="年龄"
+            style="@style/top_bar_text_style"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:text="科别"
+            style="@style/top_bar_text_style"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_nurse"
+        android:layout_below="@+id/top_line"
+        android:layout_above="@+id/Rel_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_centerInParent="true"
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/Rel_2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_xuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="护理室选择："
+            android:textSize="20dp"/>
+        <Spinner
+       android:id="@+id/send_site"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_xuanze"
+            android:layout_centerVertical="true"
+       android:entries="@array/drug_send"
+       />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="20dp"/>
+            <Button
+                android:id="@+id/bn_excute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/send"
+                android:text="执行"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/bn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bn_excute"
+                android:text="核对"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+
+   </RelativeLayout>
+
+
+
+
+</RelativeLayout>
